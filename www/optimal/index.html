@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<!-- Адаптация под мобильные приложения -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="mycss/base.css">
+<script src="myjs/ajax.js"></script>
+<title>Шаблонизатор Bootstrap 5</title>
+</head>
+<body>
+<!-- Глобальный контейнер Bootstrap -->
+<div class="container">
+<!-- Навигация -->
+<nav>
+<div class="nav nav-tabs" id="nav-tab" role="tablist">
+<button class="nav-link active" id="nav-home-tab" type="button">Главная</button>
+<button class="nav-link" id="nav-profile-tab" type="button">Пример 1</button>
+<button class="nav-link" id="nav-contact-tab" type="button">Пример 2</button>
+<button class="nav-link" id="nav-disabled-tab" type="button" disabled>Закрыто</button>
+</div>
+</nav>
+<!-- Контент (представление) -->
+<div class="tab-content" id="nav-tabContent">
+<div class="tab-pane fade show active" id="nav-home" role="tabpanel">
+<p class="text-success">Фреймворк Bootstrap 5!</p><img height="800" width="500" class="img-fluid"
+src="img/bootstrap.png">
+</div>
+<div class="tab-pane fade" id="nav-profile" role="tabpanel"></div>
+<div class="tab-pane fade" id="nav-contact" role="tabpanel"></div>
+<div class="tab-pane fade" id="nav-disabled" role="tabpanel"></div>
+</div>
+<!-- Сообщение во время загрузки -->
+<div id="loading" style="display: none"> Идет загрузка..</div>
+<!-- Приклееный подвал -->
+<footer class="mt-auto">
+&copy; Колледж АлтГУ - 2023
+</footer>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    document.querySelector('.nav').addEventListener('click', function(event) {
+        switch (event.target.innerHTML) {
+            case "Пример 1": linkcontent('view/example-01.html')
+                break;
+            case "Пример 2": linkcontent('view/example-02.html')
+                break;
+            default:
+            linkcontent('view/example-00.html')
+        }
+    })
+</script>
+</body>
+</html>

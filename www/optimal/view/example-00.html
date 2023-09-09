@@ -1,0 +1,142 @@
+<style>
+  [class*="col-"] {
+    /*Шаблон класса*/
+    background-color: #eee; /*светло-серый*/
+    text-align: center;
+    padding: 10px; /*отступ со всех сторон*/
+    margin-bottom: 10px; /*отступ снизу от соседа*/
+    border: 2px solid grey; /*рамка*/
+    font-size: 32px; /*размер текста от родителя*/
+  }
+</style>
+<div class="container">
+  <p class="text-success">Сеточная система Bootstrap</p>
+  <!-- Строка 1: Заголовок -->
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Пример индексной страницы</h1>
+      <h2>Подзаголовок для поддержки</h2>
+      <a href="btn btn-priamry btn-lg" href="#" role="button">Ссылка</a>
+    </div>
+  </div>
+  <!-- Строка 2: 3 равные столбца -->
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Первичный текст <small>вторичный текст</small></h3>
+    </div>
+    <div class="col-md-4">
+      <h3>Добавьте в избранное</h3>
+      <small><kbd>ctrl</kbd>+<kbd>d</kbd></small>
+    </div>
+    <div class="col-md-4">1/3</div>
+  </div>
+  <!-- Строка 3: 2 столбца: слева 1/3 и справа 2/3 -->
+  <div class="row">
+    <div class="col-md-4">
+      <pre>
+&lt;p&gt;Код HTML5&lt;/p&gt
+&lt;p&gt;Примеры&lt;/p&gt;
+&lt;br/&gt;
+&lt;p&gt;Bootstrap!&lt;/p&gt;
+</pre
+      >
+    </div>
+    <div class="col-md-8">
+      <img
+        class="img-responsive img-fluid d-none d-sm-block mx-auto"
+        src="img/author.png"
+        alt=""
+      />
+      <img
+        class="img-responsive img-fluid d-block d-sm-none"
+        src="img/mobile.png"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-2">1/4</div>
+    <div class="col-md-6 col-sm-8">
+      <figure class="text-end">
+        <blockquote class="blockquote">
+          <p>Преждевременная оптимизация - корень всех зол.</p>
+          <p class="blockquote-footer">
+            Информатик <cite title="Donald knuth">Дональд Эрвин Кнут</cite>
+          </p>
+        </blockquote>
+      </figure>
+    </div>
+    <div class="col-md-3 col-sm-2">1/4</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-6">
+      <p class="text-left"><code>&lt;Left&gt;</code></p>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <p class="text-left"><code>&lt;Center&gt;</code></p>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <p class="text-left"><code>&lt;Justify&gt;</code></p>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <p class="text-left"><code>&lt;Right&gt;</code></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Lowercase</h3>
+      <p class="text-lowercase fs-5">Все буквы в нижнем регистре</p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="text-capitalize"><b>u</b>ppercase</h3>
+      <p class="text-uppercase fs-6">Все буквы в верхнем регистре</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">1/4</div>
+    <div class="col-md-3">1/4</div>
+    <div class="col-md-3">1/4</div>
+    <div class="col-md-3">1/4</div>
+  </div>
+  <footer class="row">
+    <div class="col-md-2">
+      <img
+        src="img/logo.png"
+        width="100"
+        height="100"
+        class="img-responsive d-none d-sm-block"
+        alt=""
+      />
+    </div>
+    <div class="col-md-7">
+      <ul class="list-inline list-unstyled fs-6">
+        <li class="list-inline-item"><a href="#">Bootstrap</a></li>
+        <li class="list-inline-item"><a href="#">Документация</a></li>
+        <li class="list-inline-item"><a href="#">Об авторах</a></li>
+        <li class="list-inline-item"><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <address class="fs-6">
+        <strong>Колледж АлтГУ</strong><br />
+        Барнаул, Комсомольский проспект, 100 <br />
+        <abbr title="Телефон">Тел.:</abbr> +7 (3852) 111-2222
+      </address>
+    </div>
+  </footer>
+</div>
+<style>
+  .list-inline {
+    display: block;
+  }
+  .list-inline li {
+    display: inline-block;
+    margin: 20px auto; /*отступ по вертикали*/
+  }
+  .list-inline li:after {
+    content: "|";
+    margin: 0 10px;
+  }
+</style>
+<!-- end .container -->

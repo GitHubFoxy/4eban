@@ -1,0 +1,63 @@
+h1 {
+  color: DarkRed;
+  font-size: 24pt;
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+.menu {
+  color: DarkRed;
+  font-size: 12pt;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+}
+td {
+  background: PaleGoldenrod;
+}
+p {
+  color: black;
+  font-size: 12pt;
+  text-align: justify;
+  font-family: arial, sans-serif;
+}
+p.foot {
+  color: black;
+  font-size: 9pt;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+}
+a:link,
+a:visited,
+a:active {
+  color: DarkRed;
+}
+.slides {
+  display: inline-block;
+  position: relative;
+  left: 20%;
+  width: 800px;
+  height: 480px;
+}
+.index-img {
+  display: none;
+}
+#block {
+  display: block;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+<<<<<<< HEAD
+.slides img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 500px;
+}
+#logo {
+  mix-blend-mode: multiply;
+
+}
+=======
+>>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61

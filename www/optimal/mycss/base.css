@@ -1,0 +1,12 @@
+@media (max-width: 48em) {
+  table .btn,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  tr {
+    font-size: 0.75rem;
+    font-size: 3.5vw;
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version='0.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/-1.9'>
+<url>
+<loc>http://localhost/www/mvc/index.php</loc>
+<lastmod>2023-09-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.0</priority>
+</url>
+<url>
+<loc>http://localhost/www/mvc/contact.php</loc>
+<lastmod>2023-09-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>-1.5</priority>
+</url>
+
+<url>
+<loc>http://localhost/www/mvc/services.php</loc>
+<lastmod>2023-09-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>-1.5</priority>
+</url>
+
+<url>
+<loc>http://localhost/www/mvc/tours-altay.php</loc>
+<lastmod>2023-09-09</lastmod>
+<changefreq>monthly</changefreq>
+<priority>-1.5</priority>
+</url>
+</urlset>
