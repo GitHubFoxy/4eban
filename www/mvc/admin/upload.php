@@ -54,6 +54,7 @@ echo $_FILES['userfile']['name'];
 exit;
 }
 echo 'Файл '. $upfile . ' успешно загружен.<br /><br />';
+echo '<a href="upload.html">Загрузить еще?</a>';
 //Если файл текстовый (HTML, Css или Js)
 if ($logs) {
 $contents = file_get_contents($upfile);
