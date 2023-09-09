@@ -1,11 +1,6 @@
 <?php
-<<<<<<< HEAD
 
 class Model {
-=======
-class Model {
-// 1. Атрибуты класса Model
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
     public $content;
     public $filename;
     public $title = "ООО \"Алтайское туристическое агенство\"";
@@ -15,12 +10,8 @@ class Model {
     "Услуги" => "services.php",
     "Карта сайта" => "map.php"
 );
-<<<<<<< HEAD
 
 
-=======
-// 2. Операции класса Model
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 public function Display() {
     $this -> DisplayTitle(); //Название веб-страницы
     $this -> DisplayDescriptions();//Мета-тег содержания веб-страницы
@@ -30,29 +21,20 @@ public function Display() {
     $this -> DisplayContent($this->filename); //Контент
     $this -> DisplayFooter(); //Подвал
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 public function DisplayTitle() {
     echo "<!DOCTYPE html><html>\n<head>\n<meta charset='UTF-8'>\n";
     echo "<title>".$this->title."</title>";
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 public function DisplayDescriptions() {
 echo "\n<meta name=\"description\"
 content=\"".$this->description."\" />";
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 public function DisplayStyles() {
     ?>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -61,7 +43,6 @@ public function DisplayStyles() {
     <body>
     <?php
 }
-<<<<<<< HEAD
 
 
 public function DisplayHeader() {
@@ -69,11 +50,6 @@ public function DisplayHeader() {
 }
 
 
-=======
-public function DisplayHeader() {
-    require('view/header.html'); //Открываем файл в любом случае
-}
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 public function DisplayMenu($buttons) {
     echo "<table width=\"100%\" bgcolor=\"white\"" .
     "cellpadding=\"4\" cellspacing=\"4\">\n";
@@ -88,11 +64,8 @@ public function DisplayMenu($buttons) {
     }
     echo "</tr></table>\n";
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 protected function URLCurrentPage($url) {
 //Если подстрока элемента массива кнопок НЕ входит в текущую ссылку
     if(strpos($_SERVER['PHP_SELF'], $url)==false) {
@@ -101,11 +74,8 @@ protected function URLCurrentPage($url) {
     return true; // возврат True
     }
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 protected function DisplayButton($width, $name, $url, $active = true) {
     if ($active) { //Для всех прочих - ставим крестик(код UTF8) и указываем ссылку!
     echo "<td width =\"".$width."%\"> &#10062;" .
@@ -116,11 +86,8 @@ protected function DisplayButton($width, $name, $url, $active = true) {
     "<span class=\"menu\">".$name."</span></td>";
     }
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 public function DisplayContent($fil) { //Подгружаем контент
     $filename = $fil;
     //Читаем файл
@@ -129,11 +96,8 @@ public function DisplayContent($fil) { //Подгружаем контент
     fclose($myfile);
     echo $this->content=$content; //Публикуем контекст -> Атрибут класса = Значение
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cef5ad0591ada8eae26ada88bfb9e3579ab34b61
 public function DisplayFooter() {
     require('view/footer.html'); //Открываем файл в любом случае
 }

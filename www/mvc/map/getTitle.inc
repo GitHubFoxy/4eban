@@ -1,5 +1,3 @@
-
-
 <?php
 for($i=0; $i<count($files); $i++) {
     $namefile = $files[$i];
