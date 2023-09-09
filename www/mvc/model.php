@@ -24,6 +24,7 @@ public function Display() {
 
 
 public function DisplayTitle() {
+    require ("admin/login/session.php");
     echo "<!DOCTYPE html><html>\n<head>\n<meta charset='UTF-8'>\n";
     echo "<title>".$this->title."</title>";
 }
@@ -46,7 +47,7 @@ public function DisplayStyles() {
 
 
 public function DisplayHeader() {
-    require('view/header.html'); //Открываем файл в любом случае
+    require('view/header.php'); //Открываем файл в любом случае
 }
 
 
@@ -99,7 +100,7 @@ public function DisplayContent($fil) { //Подгружаем контент
 
 
 public function DisplayFooter() {
-    require('view/footer.html'); //Открываем файл в любом случае
+    require('view/footer.php'); //Открываем файл в любом случае
 }
 }
 ?>
