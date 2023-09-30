@@ -1,0 +1,36 @@
+.container {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+}
+#contact_img {
+    border-radius: 100%;
+}
+.col-75 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.col-75:first-of-type {
+    align-items: center;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: hwb(208 94% 0%);
+}
+form .row:last-child {
+    justify-content: end;
+    margin-right: 20px;
+}
+form .row:last-child input:hover {
+   background: hwb(204 77% 19%); 
+   cursor: pointer;
+}

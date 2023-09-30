@@ -39,6 +39,7 @@ content=\"".$this->description."\" />";
 public function DisplayStyles() {
     ?>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     </head>
     <script type="text/javascript" src="js/main.js"></script>
     <body>

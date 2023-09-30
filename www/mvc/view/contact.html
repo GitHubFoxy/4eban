@@ -1,1 +1,48 @@
-<p>Наши контакты:</p>
+<div class="container">
+    <div class="row">
+    <div class="col-75">
+        <img src="img/contact.png" id='contact_img'title="Мария">
+        &#8195;<span>&#9742; Менеджер: Мария</span>&#8195;
+        <!-- Вызов телефона по протоколу Tel: на Смартфоне -->
+        <div id="phone-id"></div>
+    </div>
+</div>
+<form action="admin/mail.php" method="post">
+<div class="row">
+    <div class="col-25">
+    <label for="name">Имя:</label>
+    </div>
+    <div class="col-75">
+    <input type="text" id="contact-name" name="fio" placeholder="Введите ваше имя" required>
+    </div>
+</div>
+<div class="row">
+    <div class="col-25">
+    <label for="email">Email:</label>
+    </div>
+    <div class="col-75">
+    <input type="email" id="contact-email" name="email" placeholder="Введите электронный адрес" required>
+    </div>
+</div>
+<div class="row">
+<div class="col-25">
+<label for="message">Ваше сообщение:</label><br>
+</div>
+<div class="col-75">
+<textarea name="message" id="contact-message" cols="40" placeholder="Введите сообщение.." rows="5" required></textarea>
+</div>
+</div>
+<div class="row">
+<input class="submit" type="submit" value="Отправить сообщение">
+</div>
+</form>
+</div>
+<script>
+//Если Телефон, иначе ПК
+if( /BlackBerry|iPhone|iPod|iPad|Android|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)
+) {
+document.getElementById("phone-id").innerHTML = '<span><a href="tel:+73852222333">+7(3852) 222-333</a></span>';
+} else {
+document.getElementById("phone-id").innerHTML = '<span>+7 (3852) 222-333</span>';
+}
+</script>
