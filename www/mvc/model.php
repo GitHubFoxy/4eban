@@ -8,6 +8,7 @@ class Model {
     public $buttons = array("Главная" => "index.php",
     "Контакты" => "contact.php",
     "Услуги" => "services.php",
+    "Подписка" => "subscribe.php",
     "Карта сайта" => "map.php"
 );
 
