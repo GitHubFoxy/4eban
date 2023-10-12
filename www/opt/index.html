@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="mycss/base.css" rel="stylesheet" />
+    <script src="./myjs/app.js" defer></script>
     <title>Сайт компании «Провайдер»</title>
   </head>
   <body>
@@ -49,14 +50,26 @@
             <h1 class="text-center">Компания "Провайдер"</h1>
             <h2 class="text-center">[ISP] Internet Service Provider</h2>
             <hr />
-            <ul class="list-inline list-unstyled text-center">
+            <form action="" id="form" class="hidden-element d-flex flex-row align-items-center gap-2 justify-content-center">
+                <div class="d-flex align-items-center gap-1">
+                  <p style="margin-bottom:0; color: white">@</p>
+                  <input type="text" name="" id="">
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <p style="margin-bottom:0; color: white">*</p>
+                  <input type="text" name="" id="">
+                </div>
+              <button type="submit" class="btn btn-default" id="out-btn">Войти</button>
+            </form>
+
+            <ul class="list-inline list-unstyled text-center" id="">
               <li class="list-inline-item">
-                <a class="btn btn-default btn-lg" href="#" role="button"
+                <a class="btn btn-default btn-lg" id="sign-btn" href="#" role="button"
                   >Войти</a
                 >
               </li>
               <li class="list-inline-item">
-                <a class="btn btn-primary btn-lg" href="#" role="button"
+                <a class="btn btn-primary btn-lg" href="#"  role="button"
                   >Выйти</a
                 >
               </li>
@@ -312,5 +325,7 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    </script>
   </body>
 </html>

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //Добавляем класс валидности
       fullNameInput.classList.add("is-valid");
     }
-    if (textArea.value.length > 120) {
+    if (textArea.value.length == 0) {
       //Добавляем подкласс об ошибке!
       textArea.classList.add("is-invalid");
       //Удаляем подкласс валидности!

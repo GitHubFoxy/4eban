@@ -19,7 +19,7 @@ section#intro-header .wrap-headline {
   padding-top: 20%;
   padding-bottom: 20%;
 }
-section#intro-header hl,
+section#intro-header h1,
 section#intro-header h2 {
   color: #fff;
 }
@@ -84,4 +84,7 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: #fff;
+}
+.hidden-element {
+  display: none !important;
 }
