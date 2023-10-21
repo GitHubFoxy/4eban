@@ -16,11 +16,11 @@ $this -> DisplayStyles();
 $this -> DisplayHeader();
 $this -> DisplayMenu($this->buttons);
 $this -> DisplayMenu($this->buttons2);
-$this->DisplayContent($this->filename);
+$this->DisplayPHP($this->filename);
 $this -> DisplayFooter();
 }
 }
 $ToursAltayObject = new ToursAltayPage();
-$ToursAltayObject -> filename = "view/services/tours-altay.html";
+$ToursAltayObject -> filename = "view/services/tours-altay-view.php";
 $ToursAltayObject -> Display();
 ?>

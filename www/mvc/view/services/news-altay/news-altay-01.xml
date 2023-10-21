@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding ="UTF-8" ?>
+<movies>
+    <movie>
+        <title>Алтай-Тур >> Коренное население Алтая!</title>
+        <charecters>
+            <author>Мария Попова</author>
+            <datenews>01.10.2023</datenews>
+        </charecters>
+        <image>img-altay-01.png</image>
+        <text>Новость из нескольких предложений в соответсвии с контекстом вашего сайта</text>
+    </movie>
+</movies>

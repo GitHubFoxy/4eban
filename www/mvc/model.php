@@ -104,5 +104,9 @@ public function DisplayContent($fil) { //Подгружаем контент
 public function DisplayFooter() {
     require('view/footer.php'); //Открываем файл в любом случае
 }
+public function DisplayPHP($fil) {
+    $filename = $fil;
+    if(!empty($filename)) include $filename; 
+}
 }
 ?>
