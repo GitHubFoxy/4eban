@@ -16,8 +16,9 @@ if ($_SESSION['valid_user']=='administrators') {
 ?>
 <tr>
 <td>
-<p class="foot">Раздел администратора сайта:
+<p class="foot flex flex-col">Раздел администратора сайта:
 <a href="admin/upload.html" target="_blank">Наполнение контентом</a>
+<a href="admin/subscribe_list.php" target="_blank">Список подписчиков</a>
 </p>
 </td>
 </tr>
