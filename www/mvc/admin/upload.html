@@ -5,12 +5,23 @@
         <title>Администрирование - загрузка новых файлов</title>
     </head>
     <body>
-        <h3>Выгрузка новых файлов</h3>
-        <form action="upload.php" method="POST" enctype="multipart/form-data">
-            <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
-            <label for="userfile">Выгрузить файл:</label>
-            <input type="file" name="userfile" id="userfile" />
-            <input type="submit" value="Загрузка" />
-        </form>
+        <div>
+            <h3>Выгрузка новых файлов</h3>
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+                <label for="userfile">Выгрузить файл:</label>
+                <input type="file" name="userfile" id="userfile" />
+                <input type="submit" value="Загрузка" />
+            </form>
+        </div>
+        <div>
+            <h3>Выгрузка новых новостей</h3>
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+                <label for="userfile">Выгрузить файл:</label>
+                <input type="file" name="userfile" id="userfile" />
+                <input type="submit" value="Загрузка" />
+            </form>
+        </div>
     </body>
 </html>
