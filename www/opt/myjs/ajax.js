@@ -1,4 +1,3 @@
-//сюда передаем ссылку
 function linkcontent(link) {
 //Получаем ID контента
 var cont = document.getElementById('nav-tabContent');

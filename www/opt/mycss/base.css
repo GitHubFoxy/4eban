@@ -88,3 +88,13 @@ footer a:hover {
 .hidden-element {
   display: none !important;
 }
+section#team ul {
+  margin: 5rem 0;
+}
+section#team li {
+  margin: 0 5rem;
+}
+section#team h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
