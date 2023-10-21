@@ -1,11 +1,21 @@
-<form action="subscribe.php" method="POST">
-    <h3>Подписаться на рассылку Алтай-Тур</h3>
-    <label for="first_name">Имя:</label>
-    <input type="text" name="first_name" size="20" placeholder="Имя">
-    <label for="last_name">Фамилия:</label>
-    <input type="text" name="last_name"size="20" placeholder="Фамилия">
-    <label for="email">Адрес эл. почты:</label>
-    <input type="text" name="email" size="50" placeholder="Электронный адрес">
-    <input type="submit" class="submit" value="Подписаться">
-    <input type="reset" class="submit" value="Очистить">
+<form action="subscribe.php" method="POST" class="flex flex-col bg-pale items-center gap-1 p-2">
+    <h3 class="text-center dark-red">Подписаться на рассылку Алтай-Тур</h3>
+    <div class="max-w gap-1 flex flex-col">
+        <div class="flex justify-between">
+            <label class="p-2" for="first_name">Имя:</label>
+            <input class="p-2" type="text" name="first_name" size="20" placeholder="Имя">
+        </div>
+        <div class="flex justify-between">
+            <label class="p-2" for="last_name">Фамилия:</label>
+            <input class="p-2" type="text" name="last_name"size="20" placeholder="Фамилия">
+        </div>
+        <div class="flex justify-between">
+            <label class="p-2" for="email">Адрес эл. почты:</label>
+            <input class="p-2" type="text" name="email" size="20" placeholder="Электронный адрес">
+        </div>
+    </div>
+    <div>
+        <input type="submit" class="submit" value="Подписаться">
+        <input type="reset" class="submit" value="Очистить">
+    </div>
 </form>

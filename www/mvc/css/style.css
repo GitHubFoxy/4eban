@@ -96,3 +96,36 @@ a:active {
     font-weight: bold;
     cursor: pointer;
 }
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.text-center {
+    text-align: center;
+}
+.dark-red {
+    color: DarkRed;
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+.bg-pale{
+    background: PaleGoldenrod;
+}
+.max-w {
+    
+    max-width: 400px;
+}
+.items-center{
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.p-2 {
+    padding: 10px;
+}
