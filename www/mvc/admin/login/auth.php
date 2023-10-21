@@ -9,7 +9,7 @@ if (mysqli_connect_errno()) {
 echo 'Невозможно подключиться к базе данных: '.mysqli_connect_error();
 exit();
 }
-$query = "select groups, role from authorised_users where
+$query = "select * from authorised_users where
 name = '$userid' and
 password = '$password'";
 //возвращает набор результатов "ОбъектБД,Запрос"
