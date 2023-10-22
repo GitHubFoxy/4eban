@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="mycss/base.css" rel="stylesheet" />
+    <script src="./myjs/app.js" defer></script>
+    <script src="myjs/ajax.js"></script>
+    <title>Сайт компании «Провайдер»</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand pull-left" href="#"
+                >Компания "Провайдер"</a
+              >
+                <!-- Кнопка -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsId">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse show" id="collapsId">
+                <ul id="ul-link" class="navbar-nav pull-right">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#features">Услуги</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Прейскурант</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">О нас</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end container-fluid -->
+          </nav>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </header>
+    <section id="intro-header">
+      <div class="container bg">
+        <!-- строка 2 -->
+        <div class="row">
+          <div class="wrap-headline">
+            <h1 class="text-center">Компания "Провайдер"</h1>
+            <h2 class="text-center">[ISP] Internet Service Provider</h2>
+            <hr />
+            <form action="" id="form" class="hidden-element d-flex flex-row align-items-center gap-2 justify-content-center">
+                <div class="d-flex align-items-center gap-1">
+                  <p style="margin-bottom:0; color: white">@</p>
+                  <input type="text" name="" id="">
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <p style="margin-bottom:0; color: white">*</p>
+                  <input type="text" name="" id="">
+                </div>
+              <button type="submit" class="btn btn-default" id="out-btn">Войти</button>
+            </form>
+
+            <ul class="list-inline list-unstyled text-center" id="">
+              <li class="list-inline-item">
+                <a class="btn btn-default btn-lg" id="sign-btn" href="#" role="button"
+                  >Войти</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-primary btn-lg" href="#"  role="button"
+                  >Выйти</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+    </section>
+    <div id="loading"></div>
+    <div id="nav-tabContent"></div>
+      <div class="container">
+        <h4 class="text-center">Подпишитесь на рассылку, чтобы получать свежую информацию.</h4>
+        <form class="row justify-content-center gy-2" method="POST">
+          <div class="col-auto">
+            <input class="form-control" placeholder="Ваше имя..." />
+          </div>
+          <div class="col-auto">
+            <input class="form-control" placeholder="Ваш электронный адрес" />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">
+              Подпишитесь сейчас
+            </button>
+          </div>
+        </form>
+      </div>
+      <hr />
+    <footer class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img
+              src="/www/optimal/img/logo.png"
+              class="img-responsive img-fluid"
+              height="100"
+              width="100"
+            />
+          </div>
+          <div class="col-sm-2">
+            <h5>О компании</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Документация</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">О нас</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h5>Соцсети</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h5>Поддержка</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Правила и условия</a></li>
+              <li><a href="#">Лицензия</a></li>
+              <li><a href="#">Справка</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <address>
+              <strong>Колледж АлтГУ</strong><br />
+              Барнаул, Комсомольский проспект, 100<br />
+              <abbr title="Телефон">Тел.:</abbr> +7 (3852) 111-2222
+            </address>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      window.onload = function() {
+        linkcontent("html/main.html")
+      }
+      let link = document.querySelector("#ul-link")
+      link.addEventListener('click', function(e){
+        if(e.target.nodeName != 'A') return 0
+        switch(e.target.getAttribute("href")) {
+          case "#contact": linkcontent("html/contact.html")
+          break;
+          case "#about": linkcontent("html/about.html")
+          break;
+          default: linkcontent("html/main.html")
+        }
+      })
+    </script>
+  </body>
+</html>
