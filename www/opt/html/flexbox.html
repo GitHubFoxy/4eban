@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <title>Крестики нолики</title>
+</head>
+<body class="p-4">
+    <h1 class="text-center">Игра: Крестики нолики</h1>
+    <div class=" gap-2 d-flex flex-column w-25 align-items-center mx-auto">
+        <div class="container d-flex flex-column gap-1">
+            <div class="row d-flex align-items-center justify-content-center gap-1">
+                <div id="cell1" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="cell2" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="cell3" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center gap-1">
+                <div id="cell4" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="cell5" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="cell6" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center gap-1">
+                <div id="cell7" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="cell8" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="cell9" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+            </div>    
+        </div>
+        <button id="reload" class="btn btn-warning">Повторить?</button>
+    </div>
+    <style>
+        .row div {
+            min-height: 3rem;
+            max-width: 3rem;
+        }
+    </style>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        
+        reload.addEventListener('click', () => {
+            location.reload()
+        })
+    </script>
+</body>
+</html> 
