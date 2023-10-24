@@ -11,22 +11,22 @@
     <div class=" gap-2 d-flex flex-column w-25 align-items-center mx-auto">
         <div class="container d-flex flex-column gap-1">
             <div class="row d-flex align-items-center justify-content-center gap-1">
-                <div id="cell1" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
-                <div id="cell2" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
-                <div id="cell3" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="1" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="2" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="3" class=" btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
             </div>
             <div class="row d-flex align-items-center justify-content-center gap-1">
-                <div id="cell4" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
-                <div id="cell5" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
-                <div id="cell6" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="4" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="5" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="6" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
             </div>
             <div class="row d-flex align-items-center justify-content-center gap-1">
-                <div id="cell7" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
-                <div id="cell8" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
-                <div id="cell9" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="7" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="8" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
+                <div id="9" class="btn col-sm border border-success d-flex justify-content-center align-items-center"></div>
             </div>    
         </div>
-        <button id="reload" class="btn btn-warning">Повторить?</button>
+        <button onclick="ResetGame()"  id="reload" class="btn btn-warning">Повторить?</button>
     </div>
     <style>
         .row div {
@@ -36,10 +36,63 @@
     </style>
     <script src="../js/bootstrap.min.js"></script>
     <script>
-        
-        reload.addEventListener('click', () => {
-            location.reload()
+    var canMove = true
+    var grid = ['','','','','','','','','']
+    const cells = document.querySelectorAll('.row .btn')
+    cells.forEach(cell => {
+        cell.addEventListener('click', (e) => {
+        if (canMove && e.target.innerHTML == '') {
+            e.target.innerHTML += 'x'
+            check(e.target.id)
+            canMove=false
+            botmove()
+        }
         })
+    });
+    const botmove = () => {
+        
+        canMove=true
+    }
+    const check = (id) => {
+       grid[id] = 'x'
+       if(grid[1] && grid[4] && grid[7] == 'x') {
+        win()
+       } else if (grid[1] && grid[2] && grid[3] =='x') {
+        win()
+       } else if (grid[3]&&grid[6]&&grid[9] =='x') {
+        win()
+       } else if (grid[7]&&grid[8]&& grid[9] =='x') {
+        win()
+       } else if (grid[3]&&grid[5]&&grid[7]=='x'){
+        win()
+       } else if (grid[1]&&grid[5]&&grid[9]=='x') {
+        win()
+       }
+       console.log(grid) 
+    }
+
+
+
+
+
+
+
+    const win = () => {
+        const p = document.createElement('p')
+        p.classList.add('text-center','mt-2')
+        p.innerHTML='You won!'
+        document.body.append(p)
+    }
+    const lose = () => {
+        const p = document.createElement('p')
+        p.classList.add('text-center','mt-2')
+        p.innerHTML='You lost!'
+        document.body.append(p)
+    }
+    const ResetGame = () => {
+        location.reload()
+    }    
+        
     </script>
 </body>
 </html> 
